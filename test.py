@@ -28,8 +28,8 @@ df = pd.read_csv(test_data_path, sep=",")
 
 # Split data into dependent and independent variables
 # Drop useless variables
-X_test = df.drop(['target'], axis='columns')
-y_test = df['target']
+X_test = df.drop(['Outcome'], axis='columns')
+y_test = df['Outcome']
 
 # Predict
 logit_predictions = logit_model.predict(X_test)
