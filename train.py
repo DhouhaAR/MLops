@@ -20,8 +20,8 @@ df = pd.read_csv(train_data_path, sep=",")
 
 # Split data into dependent and independent variables
 # Drop useless variables
-X_train = df.drop(['target'], axis='columns')
-y_train = df['target']
+X_train = df.drop(['Outcome'], axis='columns')
+y_train = df['Outcome']
 
 
 # Model 
