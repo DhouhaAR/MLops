@@ -4,7 +4,7 @@ RUN pip install joblib
 
 
 USER root
-RUN yum update && yum install -y jq
+RUN apt-get update && apt-get install -y jq
 
 RUN mkdir model raw_data processed_data results
 
